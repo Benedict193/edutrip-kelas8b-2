@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        body {
+            background-color: rgb(227, 27, 35);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header a {
+            color: #2ddd3a;
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-size: large;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: crimson;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity to make the image faint */
+            z-index: 1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 3;
+            font-size: 50px;
+            color: #fce5af;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            color: #fce5af;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #fce5af;
+        }
+
+        .large-img {
+            width: 500px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            color: #fce5af;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1 class="header-title">My Edutrip</h1>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="ips.html">IPS</a>
+            <a href="bahasa_mandarin.html">Bahasa Mandarin</a>
+            <a href="bahasa_inggris.html">Bahasa Inggris</a>
+            <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        </div>
+    </header>
+
+    <h1>Edutrip Taiwan</h1>
+
+    <div class="content">
+        <img src="Flag_of_the_Republic_of_China.svg.png" alt="Image 1">
+        <img src="Flag_of_Indonesia.svg.png" alt="Image 2">
+        <p>Selamat datang di situs web saya! Di sini Anda dapat menemukan informasi tentang berbagai mata pelajaran yang saya ditugaskan di Taiwan.</p>
+    </div>
+
+    <footer>
+       Benedict Benson 8B/02 Santa Laurensia Junior High School
+    </footer>
+    <div class="content">
+        <img class="large-img" src="20250311_154331 (1).jpg" alt="Image 1">
+        <img class="large-img" src="20250311_154710.jpg" alt="Image 2">
+        <img class="large-img" src="20250311_154850.jpg" alt="Image 3">
+        <img class="large-img" src="20250314_171810.jpg" alt="Image 4">
+        <img class="large-img" src="hotel_picture.jpg" alt="Hotel Image">
+    </div>
+</body>
+</html>

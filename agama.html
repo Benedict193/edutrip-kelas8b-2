@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        body {
+            background-color: #00C700;
+            font-family: '8-Bit Operator JVE';
+            margin: 5px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: rgb(132, 0, 255);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header a {
+            color: rgb(194, 151, 94);
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-size: large;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: crimson;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity to make the image faint */
+            z-index: 1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 3;
+            font-size: 50px;
+            color: #fce5af;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            color: rgb(197, 25, 25);
+        }
+
+        p, ul {
+            font-size: 20px; /* Increase font size for paragraphs and list items */
+        }
+
+        img {
+            width: 500px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            color: rgb(194, 151, 94);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content {
+            margin-bottom: 100px; /* Space for the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1 class="header-title">My Edutrip</h1>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="ips.html">IPS</a>
+            <a href="bahasa_mandarin.html">Bahasa Mandarin</a>
+            <a href="bahasa_inggris.html">Bahasa Inggris</a>
+            <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Ini adalah halaman Agama</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Di Agama, saya belajar tentang Gereja Holy Family Catholic Church</p>
+                    <ul>
+                        <li>Sejarah Gereja</li>
+                        <li>Deskripsi Bangunan Gereja</li>
+                        <li>Perayaan dan Ritual</li>
+                        <li>Komunitas dan Kegiatan</li>
+                        <li>Perbedaan Gereja Ini dengan Gereja yang ada di Jakarta</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="20250309_093648.jpg" alt="Image related to Agama">
+                    <img src="20250309_094219.jpg" alt="Image related to Agama">
+                </td>
+            </tr>
+        </table>
+        <p> Gereja dibangun pada tahun 1964, 
+            Gereja ini merupakan salah satu Gereja Terbesar di Taiwan.
+            Altar Gereja merupakan altar yang sangat simplistik.
+            kaca kaca yang terdapat di Gereja juga mengilustrasi perjalanan Yesus ke gunung Golgota.
+            Di belakang Altar ada bendera negara Taiwan, serta Salib Yesus. 
+            Di depan kiri Gereja Patung Bunda Maria yang terbentuk dari bahan berkayu
+            Di depan kanan Gereja terdapat Piano.
+            Gereja ini merupakan Gereja biasa yang digunakan untuk ibadah mingguan.
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>Di Agama, saya Juga belajar tentang Comunity Service di Tzu Chi foundation center dan di Ren Ai citizens home</p>
+                    <ul>
+                        <li>Aktivitas di Tzu chi dan Ren Ai</li>
+                        <li>Tujuan saya di Tzu chi dan Ren Ai</li>
+                        <li>Apa yang dipelajari di Ren Ai dan Tzu chi</li>
+                        <li>Bagaimana kegiatan yang saya lakukan menjadi sebuah aksi yang membuktikan aku anak Allah</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="20250311_110738.jpg" alt="Image related to Agama">
+                    <img src="20250314_105831.jpg" alt="Image related to Agama">
+                </td>
+            </tr>
+        </table>
+        <p>
+            Saya melakukan Comunity Service di Tzu Chi foundation center dan di Ren Ai citizens home.
+            Di Tzu Chi foundation center, saya melakukan kegiatan Belajar tentang daur ulang dan saya hanya menonton performance theman saya di ren ai citizens home.
+            Tujuan saya adalah untuk belajar tentang daur ulang dan menghibur orang lansia. Saya belajar banyak hal di Tzu chi, salah satunya adalah tujuan sampah ketika tidak di daur ulang dan saya tidak belajar apapun di Ren ai citizens home.
+            Cara saya membuktikan aku anak Allah di Tzu Chi foundation center adalah dengan melakukan kegiatan belajar dan mengorbankan waktu agar daur ulang lebih dilakukan  dan di Ren Ai citizens home adalah menonton dan mengikuti kegiatan yang ada.
+        </p>
+    </div>
+
+    <footer>
+        2025 Benedict Benson
+    </footer>
+</body>
+</html>

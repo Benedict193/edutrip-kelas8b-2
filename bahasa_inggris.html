@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        body {
+            background-color: #a149a0;
+            font-family: '8-Bit Operator JVE', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #391ed6;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header a {
+            color: antiquewhite;
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-size: large;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: crimson;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity to make the image faint */
+            z-index: 1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 3;
+            font-size: 50px;
+            color: #fce5af;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            color: #17ca20;
+        }
+
+        p, ul {
+            font-size: 20px; /* Increase font size for paragraphs and list items */
+        }
+
+        img {
+            width: 600px; /* Set the desired width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 10px;
+        }
+
+        .small-img {
+            width: 200px; /* Set the desired width for the smaller image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .medium-img {
+            width: 400px; /* Set the desired width for the medium image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .large-img {
+            width: 800px; /* Set the desired width for the large image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        footer {
+            background-color: #ba2222;
+            text-align: center;
+            padding: 10px 0;
+            color: antiquewhite;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .content {
+            margin-bottom: 100px; /* Space for the footer */
+            text-align: center;
+        }
+
+        .paragraph-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .paragraph-container:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .paragraph-container:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .paragraph-container img {
+            width: 600px; /* Set the desired width for the images */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 20px;
+        }
+
+        .paragraph-container img.small-img {
+            width: 200px; /* Set the desired width for the smaller image */
+        }
+
+        .paragraph-container img.medium-img {
+            width: 400px; /* Set the desired width for the medium image */
+        }
+
+        .paragraph-container img.large-img {
+            width: 800px; /* Set the desired width for the large image */
+        }
+
+        .paragraph-container p {
+            flex: 1;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1 class="header-title">My Edutrip</h1>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="ips.html">IPS</a>
+            <a href="bahasa_mandarin.html">Bahasa Mandarin</a>
+            <a href="bahasa_inggris.html">Bahasa Inggris</a>
+            <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Ini adalah halaman Bahasa Inggris</h1>
+        <div class="paragraph-container">
+            <p>Di Bahasa Inggris, I will learn about the Kuo Sheng Nuclear Powerplant</p>
+        </div>
+        <div class="paragraph-container">
+            <p>Do you know where your electricity comes from? What about Taiwan's electricity? 
+                This article is here to tell you the truth about where the light in your home comes from, 
+                where our airfryer gets power and much more. But to get a heads up, Taiwan's  electricity mostly comes from power plant</p>
+        </div>
+        <div class="paragraph-container">
+            <img src="20250311_134407.jpg" alt="Kuo Sheng Nuclear Powerplant viewport">
+            <p>First, how does it work? It works by uranium 235 getting “shot” by neutrons. 
+                This makes a chain reaction of heat and this heat is transferred to the water above it. 
+                This chain reaction is called nuclear fission. 
+                The heat is then captured and converted by a turbine that converts the heat into electricity. 
+                Since the heat is so massive from the nuclear fission, 
+                it's a really good way to generate power or electricity. At the bottom of the “stove”, 
+                there are cooling rods used to keep the temperature stable and safe to contain.</p>
+        </div>
+        <div class="paragraph-container">
+            <img class="small-img" src="Robot Nigga.jpeg" alt="Robot">
+            <p>Since you now know how the power plant generates electricity, 
+                I will now tell you the risks of running a power plant. 
+                As uncle Ben once said “with great power, comes great responsibility”. 
+                In terms of context, this actually makes sense because there are risks that we have to take, 
+                there are only a few risks, but if one of these things happens, bad things can occur. 
+                The first risk is a nuclear meltdown, since the nuclear item and the water is extremely hot, 
+                this can melt its container which spills radioactive waste in the surrounding area and even cause an explosion. 
+                This tragedy actually happened on April 26, 1986 or the Chernobyl Incident, 
+                to this day the place still has a small amount of radioactivity, 
+                that's almost 50 years after the initial tragedy. This incident also involves a breach and a malfunction, 
+                more specifically the cooling rods malfunction which is used to control the temperature,
+                but since it malfunctioned, the water and the nuclear material got too hot for the container to handle.
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <img class="medium-img" src="Image_20250317_110410_966.jpeg" alt="Image related to Kuo Sheng Nuclear Powerplant">
+            <p>Since now you know there are risks and what the risks are, 
+                how do they prevent an accident from ever happening? The nuclear power plant has many workers, 
+                these workers are very educated and professionals on handling a situation. To help them, 
+                there are signal warnings that will alert the workers if a machine/component is damaged or has
+                 malfunctioned, after that, a crew will fix the problem. Another safety measure that they do is 
+                 by replacing the water and the nuclear material every 1 and a half years or 18 months. 
+                 These safety measurements ensure the safety of the surrounding area and the power plant itself.</p>
+        </div>
+        <div class="paragraph-container">
+            <img src="Taiwan-Nuclear-Power-Plant.webp" alt="Image 4">
+            <p>To sum it all up, the nuclear power plant is one of Taiwan's main
+                 sources of electricity and it works by harnessing heat from nuclear material. 
+                 The power plant is very dangerous but is handled by professionals. 
+                 Safety measures such as yearly checking and alarms have been placed to minimize 
+                 the possibility of an accident. It is a very good tourist are who wants to learn 
+                 about how nuclear power plants work in more detail and since its made just by the sea, 
+                 you can get a stunningly beautiful view. Nuclear power is the future of technology and 
+                 we have used it to help us in our lives, this can be a massive advancement for human kind, 
+                 because this can open up many opportunities to see what we can harness next.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Mind Map</h2>
+        <img class="large-img" src="' (2).png" alt="Mindmap">
+    </div>
+
+    <footer>
+        2025 Benedict Benson
+    </footer>
+</body>
+</html>

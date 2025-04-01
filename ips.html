@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        body {
+            background-color: #00f5fa;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: rgb(170, 36, 36);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header a {
+            color: antiquewhite;
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-size: large;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: rgb(107, 20, 220);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity to make the image faint */
+            z-index: 1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 3;
+            font-size: 50px;
+            color: #fce5af;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            color: rgb(255, 208, 0);
+        }
+
+        p {
+            font-size: 22px; /* Increased font size for paragraph text */
+            line-height: 1.6; /* Improved readability with line height */
+        }
+
+        .content {
+            margin-bottom: 100px; /* Space for the footer */
+            text-align: center;
+        }
+
+        .paragraph-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .paragraph-container:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .paragraph-container:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .paragraph-container img {
+            width: 500px; /* Set the desired width for the images */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 20px;
+        }
+
+        .paragraph-container p {
+            flex: 1;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1 class="header-title">My Edutrip</h1>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="ips.html">IPS</a>
+            <a href="bahasa_mandarin.html">Bahasa Mandarin</a>
+            <a href="bahasa_inggris.html">Bahasa Inggris</a>
+            <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        </div>
+    </header>
+
+    <h1>This is the IPS page</h1>
+    <h2>In IPS, I will learn about the history of Jiu Fen Old Street and the condition of the Kee Lung Night Market.</h2>
+    <div class="content">
+        <div class="paragraph-container">
+            <img src="20250311_154333 (1).jpg" alt="Jiu Fen Old Street">
+            <p>Jiufen Old Street, located in Ruifang District, New Taipei City, Taiwan, 
+                is a historic area that traces its origins back to the Qing Dynasty when it was a small 
+                village housing nine families, hence the name "Jiufen," meaning "nine portions". 
+                The discovery of gold in the late 19th century transformed Jiufen into a bustling mining town, 
+                reaching its peak during Japanese colonization, which left a lasting architectural influence. 
+                After World War II and the decline of gold mining, Jiufen fell into obscurity until the 1989 
+                film A City of Sadness brought it back into the spotlight. Today, Jiufen Old Street is a 
+                popular tourist destination, celebrated for its narrow alleyways, traditional teahouses, 
+                and vibrant cultural heritage.</p>
+        </div>
+        <div class="paragraph-container">
+            <img src="20250311_153509-EDIT.jpg" alt="Feng Chia Night Market">
+            <p>While i was strolling through the old street, i wanted some coffee, so i went to a nearby shop that looked like a nice place to sit down for a little bit.
+                This place was owned by a old couple who were very friendly and welcoming. They took my order and when it arriced i figured it was a nice place to ask them things for my history or IPS work.
+                Unfortunately, they couldnt speak much english, but the couple had a translation app so we can communicate.
+                I asked them about the history, the enviroment and the over all Comunity of Jiufen Old Street. They told me that Jiufen oldstreet was their home and the shop was their house.
+                So i asked them about the house, they said it was a former japanese house owned by the manager of the gold miners. And the community was very nice and mostly budhist.
+                Their house was preserved before they bought it so it looks very traditional and old but the conditon of the house is great. After a little chat, i said thank you and goodbye before shortly getting lost.
+            </p>
+        </div>
+        <div class="paragraph-container">
+            <img src="Screenshot 2025-04-01 181320.png" alt="Night Market">
+            <p>Keelung Night Market, also known as Miaokou Night Market, 
+                is a crowded place located near Dianji Temple in Keelung City, Taiwan. 
+                It features vibrant streets lined with food stalls offering a variety of Taiwanese foods, 
+                such as mini steaks, butter crabs, and boba. Visitors can enjoy the lively atmosphere, due to all the game stalls, 
+                shopping for unique items, and eat freshly prepared street food while navigating through the crowded 
+                yet organized alleys. The market is a popular destination for both locals and tourists looking for 
+                a night market to enjoy.</p>
+        </div>
+    </div>
+</body>
+</html>

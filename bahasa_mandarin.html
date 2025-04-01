@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        body {
+            background-color: #fdf001;
+            font-family: '8-Bit Operator JVE';
+            margin: 5px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #205b9b; /* Updated color to go well with #fdf001 */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header a {
+            color: antiquewhite;
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-size: large;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: crimson;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('path/to/your/background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity to make the image faint */
+            z-index: 1;
+        }
+
+        .header-title {
+            position: relative;
+            z-index: 3;
+            font-size: 50px;
+            color: #fce5af;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px; /* Increased font size for the main heading */
+            color: #205b9b;
+        }
+
+        h2 {
+            font-size: 30px; /* Increased font size for subheadings */
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 22px; /* Increased font size for paragraph text */
+            line-height: 1.6; /* Improved readability with line height */
+        }
+
+        .content {
+            margin-bottom: 100px; /* Space for the footer */
+            text-align: center;
+        }
+
+        .paragraph-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .paragraph-container:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .paragraph-container:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .paragraph-container img {
+            width: 500px; /* Increased the width for larger images */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 20px;
+        }
+
+        .paragraph-container p {
+            flex: 1;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1 class="header-title">My Edutrip</h1>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">PKN</a>
+            <a href="ips.html">IPS</a>
+            <a href="bahasa_mandarin.html">Bahasa Mandarin</a>
+            <a href="bahasa_inggris.html">Bahasa Inggris</a>
+            <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+        </div>
+    </header>
+
+    <h1>This is the Mandarin Page</h1>
+    <h2>The text below is the translation of the poster below and the pictures beside it are pictures I took while at the school or having a school activity elsewhere</h2>
+    <div class="content">
+        <div class="paragraph-container">
+            <img src="20250310_125133.jpg" alt="Image 1">
+            <p>My friend in Taiwan is called Louis. He is in the eighth grade.
+                His birthday is February 20th. He is studying at Sacred Heart School.
+                He is thirteen years old this year.</p>
+        </div>
+        <div class="paragraph-container">
+            <img src="20250312_124940.jpg" alt="Image 2">
+            <p>He likes to eat eggs.
+                His hobbies are badminton and basketball.
+                My friend wants to be a computer designer.
+                His dad is his idol.</p>
+        </div>
+        <div class="paragraph-container">
+            <img src="20250312_120701.jpg" alt="Image 3">
+            <p>My friend and I went to Jiufen Old Street and Renai Citizens Home.
+                I liked the activity called Draw and Guess.
+                I saw beautiful scenery and learned about clean water sanitation.</p>
+        </div>
+    <h2>The poster I made about my friend in Sacred Heart School, filled with what he likes, his hobbies, and much more, typed in Chinese.</h2>
+    <img src="Dark Blue and Yellow Illustration Night Sea Daily Journal A4 Document.png" alt="Image related to Bahasa Mandarin">
+    </div>
+</body>
+</html>
